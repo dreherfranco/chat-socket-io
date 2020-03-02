@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat publico con socket</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <link type="text/css" rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+  <h1>Sala de chat</h1>
+  
+  <div id="messages">
+  </div>
+  <br><hr>
+  <form onsubmit="return addMessage(this)">
+    <input type="text" id="author" placeholder="Nombre" /> <br>
+    <textarea id="text" placeholder=" Mensaje"></textarea><br>
+    <input type="submit" value="enviar"/>
+  </form>
+</body>
+</html>
